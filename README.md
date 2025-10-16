@@ -67,7 +67,7 @@ Masque sous-réseau : 255.255.255.0
 - la plage d’adresses disponibles : 172.16.0.1 à 172.16.0.254
 
 
-### Exercice 3 :  172.16.27.32/23  - (erreur selon convertisseur)
+### Exercice 3 :  172.16.27.32/23
 #### Détermination du masque sous réseau, calcul de l'adresse de réseau et du broadcast :
 
 ##### Calcul de l'adresse de réseau et du broadcast :
@@ -75,11 +75,11 @@ Adresse IP : 172.16.27.32
 Masque sous-réseau : /23 = 23 premiers bits réseau puis 9 bits machine) = équivaut à 255.255.254.0
 11111111 11111111 11111110 00000000
 ###### Formule du chiffre magique :
- - octet significatif = 27
- - détermination du chiffre magique = 256 - 27 = 229
- - Multiples du nombre magique jusqu'à 256 = 0  229
- - Adresse IP 172.16.27.32 => **172.16.0.0** (0 étant le multiple inférieur ou égal le plus proche de 27)
- - Adresse de broadcast : 172.16.27.32 => **172.16.228.255** (229 étant le multiple supérieur le plus proche de 27, on indique 228-1)
+ - octet significatif = 254
+ - détermination du chiffre magique = 256 - 254 = 2
+ - Multiples du nombre magique jusqu'à 256 = 26 28 32
+ - Adresse IP 172.16.27.32 => **172.16.26.0** (26 étant le multiple inférieur ou égal le plus proche de 27)
+ - Adresse de broadcast : 172.16.32.32 => **172.16.27.255** (28 étant le multiple supérieur le plus proche de 27, on indique 27-1)
 
 ###### Nombre d'adresses utilisables par des machines: Masque sous réseau : 255.255.254.0
 - Méthode manuelle : le masque sous réseau 255.255.254.0 correspond en binaire à 2 octets de 1 (=16 bits) puis 11111110 00000000 (c'est à dire 9 bits de 0) : en décimal = 512 -2 = **510**
@@ -87,10 +87,10 @@ Masque sous-réseau : /23 = 23 premiers bits réseau puis 9 bits machine) = équ
   On applique la formule (2 puissance n)-2 où n=9 : (2 puissance 9)-2 = 512 - 2 = **510**
 
 #### Réponses :
-- l’adresse de réseau : 172.16.0.0
-- l’adresse de broadcast : 172.16.229.255
+- l’adresse de réseau : 172.16.26.0
+- l’adresse de broadcast : 172.16.27.255
 - le nombre d’adresses utilisables par des machines : 510
-- la plage d’adresses disponibles : 172.16.0.1 à 172.16.0.254
+- la plage d’adresses disponibles : 172.16.26.1 à 172.16.27.254
 
 
 ### Exercice 4 :  10.7.5.1 – 255.255.128.0
