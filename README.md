@@ -41,7 +41,7 @@ Masque sous-réseau : /24 = 24 premiers bits réseau puis 8 bits machine) = équ
 - la plage d’adresses disponibles : 192.168.13.1 à 192.168.13.254
 
 
-### Exercice 2 : 172.16.27.32/23
+### Exercice 2 : 172.16.0.1 – 255.255.255.0
 #### Détermination du masque sous réseau, calcul de l'adresse de réseau et du broadcast :
 
 ##### Calcul de l'adresse de réseau et du broadcast :
